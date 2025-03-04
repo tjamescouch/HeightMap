@@ -14,6 +14,7 @@
 #include "height-map.h"
 #include "shaders.h"
 #include "math-lib.h"
+#include <mach-o/dyld.h>
 
 // stb_image for loading PNG/JPG
 #define STB_IMAGE_IMPLEMENTATION
@@ -314,19 +315,39 @@ void Renderer::buildBuffers()
     pArgEncoder->release();
 }
 
+std::string Renderer::getFilePath(std::string resourceName) {
+    namespace fs = std::filesystem;
+
+    char path[PATH_MAX];
+    uint32_t size = sizeof(path);
+    if (_NSGetExecutablePath(path, &size) != 0) {
+        throw std::runtime_error("❌ File path buffer too small.");
+    }
+
+    fs::path executablePath = fs::canonical(path);
+    fs::path resourcePath = executablePath.parent_path().parent_path() / "Resources" / resourceName;
+
+    if (!fs::exists(resourcePath)) {
+        throw std::runtime_error("❌ Could not find file at " + resourcePath.string());
+    }
+    std::cout << "📂 Loaded file " << resourceName << std::endl;
+
+    return resourcePath.string();
+}
+
 void Renderer::buildSky()
 {
     static const char* faceFilenames[6] = {
-        "./px2.jpeg",
-        "./nx2.jpeg",
-        "./py2.jpeg",
-        "./ny2.jpeg",
-        "./pz2.jpeg",
-        "./nz2.jpeg"
+        "px2.jpeg",
+        "nx2.jpeg",
+        "py2.jpeg",
+        "ny2.jpeg",
+        "pz2.jpeg",
+        "nz2.jpeg"
     };
     
     int firstW, firstH, comp;
-    unsigned char* tmp = stbi_load(faceFilenames[0], &firstW, &firstH, &comp, 4);
+    unsigned char* tmp = stbi_load(getFilePath(faceFilenames[0]).c_str(), &firstW, &firstH, &comp, 4);
     if (!tmp)
     {
         throw std::runtime_error(std::string("Failed to load image: ") + faceFilenames[0]);
@@ -355,7 +376,7 @@ void Renderer::buildSky()
     for (int face = 0; face < 6; face++)
     {
         int w, h, channels;
-        unsigned char* facePixels = stbi_load(faceFilenames[face], &w, &h, &channels, 4);
+        unsigned char* facePixels = stbi_load(getFilePath(faceFilenames[face]).c_str(), &w, &h, &channels, 4);
         if (!facePixels)
         {
             throw std::runtime_error(std::string("Failed to load image: ") + faceFilenames[face]);

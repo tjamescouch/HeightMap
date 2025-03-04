@@ -75,6 +75,7 @@ private:
     void buildSky();
     void buildBuffers();
     void buildSkyPipelineState();
+    std::string getFilePath(std::string resourceName);
     
     // ---------------------------------------------------
     //  Internal Draw Methods
