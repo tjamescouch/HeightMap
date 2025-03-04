@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DF5F23FD2D6A711A00D915B2"
-               BuildableName = "MetalNeuron.app"
-               BlueprintName = "MetalNeuron"
-               ReferencedContainer = "container:MetalNN.xcodeproj">
+               BuildableName = "HeightMap.app"
+               BlueprintName = "HeightMap"
+               ReferencedContainer = "container:HeightMap.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DF5F23FD2D6A711A00D915B2"
-            BuildableName = "MetalNeuron.app"
-            BlueprintName = "MetalNeuron"
-            ReferencedContainer = "container:MetalNN.xcodeproj">
+            BuildableName = "HeightMap.app"
+            BlueprintName = "HeightMap"
+            ReferencedContainer = "container:HeightMap.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DF5F23FD2D6A711A00D915B2"
-            BuildableName = "MetalNeuron.app"
-            BlueprintName = "MetalNeuron"
-            ReferencedContainer = "container:MetalNN.xcodeproj">
+            BuildableName = "HeightMap.app"
+            BlueprintName = "HeightMap"
+            ReferencedContainer = "container:HeightMap.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

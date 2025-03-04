@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DF5F23FE2D6A711A00D915B2 /* MetalNeuron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalNeuron.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF5F23FE2D6A711A00D915B2 /* HeightMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeightMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5F240E2D6A713100D915B2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DF5F24102D6A713F00D915B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF5F24122D6A714600D915B2 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
@@ -24,23 +24,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		DF5F24972D6A723400D915B2 /* Exceptions for "MetalNeuron" folder in "MetalNeuron" target */ = {
+		DF5F24972D6A723400D915B2 /* Exceptions for "HeightMap" folder in "HeightMap" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Assets.xcassets,
 				"Preview Content/Preview Assets.xcassets",
 			);
-			target = DF5F23FD2D6A711A00D915B2 /* MetalNeuron */;
+			target = DF5F23FD2D6A711A00D915B2 /* HeightMap */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DF5F23FF2D6A711A00D915B2 /* MetalNeuron */ = {
+		DF5F23FF2D6A711A00D915B2 /* HeightMap */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				DF5F24972D6A723400D915B2 /* Exceptions for "MetalNeuron" folder in "MetalNeuron" target */,
+				DF5F24972D6A723400D915B2 /* Exceptions for "HeightMap" folder in "HeightMap" target */,
 			);
-			path = MetalNeuron;
+			path = HeightMap;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -64,7 +64,7 @@
 		DF5F23852D6A2D3100D915B2 = {
 			isa = PBXGroup;
 			children = (
-				DF5F23FF2D6A711A00D915B2 /* MetalNeuron */,
+				DF5F23FF2D6A711A00D915B2 /* HeightMap */,
 				DF5F240D2D6A713100D915B2 /* Frameworks */,
 				DF5F238D2D6A2D3100D915B2 /* Products */,
 			);
@@ -73,7 +73,7 @@
 		DF5F238D2D6A2D3100D915B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF5F23FE2D6A711A00D915B2 /* MetalNeuron.app */,
+				DF5F23FE2D6A711A00D915B2 /* HeightMap.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,9 +93,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DF5F23FD2D6A711A00D915B2 /* MetalNeuron */ = {
+		DF5F23FD2D6A711A00D915B2 /* HeightMap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF5F240A2D6A711B00D915B2 /* Build configuration list for PBXNativeTarget "MetalNeuron" */;
+			buildConfigurationList = DF5F240A2D6A711B00D915B2 /* Build configuration list for PBXNativeTarget "HeightMap" */;
 			buildPhases = (
 				DF5F23FA2D6A711A00D915B2 /* Sources */,
 				DF5F23FB2D6A711A00D915B2 /* Frameworks */,
@@ -106,13 +106,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DF5F23FF2D6A711A00D915B2 /* MetalNeuron */,
+				DF5F23FF2D6A711A00D915B2 /* HeightMap */,
 			);
-			name = MetalNeuron;
+			name = HeightMap;
 			packageProductDependencies = (
 			);
 			productName = MetalNeuron;
-			productReference = DF5F23FE2D6A711A00D915B2 /* MetalNeuron.app */;
+			productReference = DF5F23FE2D6A711A00D915B2 /* HeightMap.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DF5F23892D6A2D3100D915B2 /* Build configuration list for PBXProject "MetalNN" */;
+			buildConfigurationList = DF5F23892D6A2D3100D915B2 /* Build configuration list for PBXProject "HeightMap" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -144,7 +144,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF5F23FD2D6A711A00D915B2 /* MetalNeuron */,
+				DF5F23FD2D6A711A00D915B2 /* HeightMap */,
 			);
 		};
 /* End PBXProject section */
@@ -231,7 +231,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = MetalNeuron/MetalNeuron.entitlements;
+				CODE_SIGN_ENTITLEMENTS = HeightMap/HeightMap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -312,7 +312,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = MetalNeuron/MetalNeuron.entitlements;
+				CODE_SIGN_ENTITLEMENTS = HeightMap/HeightMap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -354,7 +354,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF5F23892D6A2D3100D915B2 /* Build configuration list for PBXProject "MetalNN" */ = {
+		DF5F23892D6A2D3100D915B2 /* Build configuration list for PBXProject "HeightMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF5F23912D6A2D3100D915B2 /* Debug */,
@@ -363,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF5F240A2D6A711B00D915B2 /* Build configuration list for PBXNativeTarget "MetalNeuron" */ = {
+		DF5F240A2D6A711B00D915B2 /* Build configuration list for PBXNativeTarget "HeightMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF5F240B2D6A711B00D915B2 /* Debug */,
